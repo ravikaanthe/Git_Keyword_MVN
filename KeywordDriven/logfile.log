@@ -1,0 +1,123 @@
+2017-09-18 22:29:36,012 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:29:36,014 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:29:36,015 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:29:36,016 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:29:36,017 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:29:36,035 INFO  [Log] Opening Browser 
+2017-09-18 22:30:17,101 INFO  [Log] Chrome browser started 
+2017-09-18 22:30:27,389 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-18 22:30:38,886 INFO  [Log] Entering the text in txt_Username 
+2017-09-18 22:30:48,582 INFO  [Log] Entering the text in txt_Password 
+2017-09-18 22:30:57,829 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-18 22:31:08,962 INFO  [Log] Wait for 5 seconds 
+2017-09-18 22:33:49,979 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:33:49,982 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:33:49,983 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:33:49,985 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:33:49,986 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:33:56,642 INFO  [Log] Opening Browser 
+2017-09-18 22:34:39,283 INFO  [Log] Chrome browser started 
+2017-09-18 22:34:54,952 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-18 22:35:13,724 INFO  [Log] Entering the text in txt_Username 
+2017-09-18 22:35:26,406 INFO  [Log] Entering the text in txt_Password 
+2017-09-18 22:35:39,196 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-18 22:35:56,989 INFO  [Log] Wait for 5 seconds 
+2017-09-18 22:36:25,499 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-18 22:36:25,501 INFO  [Log] X 
+2017-09-18 22:36:25,502 INFO  [Log] X 
+2017-09-18 22:36:25,503 INFO  [Log] X 
+2017-09-18 22:36:25,504 INFO  [Log] X 
+2017-09-18 22:36:25,544 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:36:25,545 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:36:25,546 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:36:25,548 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:36:25,549 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:36:47,771 INFO  [Log] Clicking on Webelement btn_Tshirts 
+2017-09-18 22:37:34,079 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
+2017-09-18 22:37:45,257 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir19856_32441}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5755c8a0cb357de5b6bab5010731c8fc
+*** Element info: {Using=xpath, value=title_Tshirts} 
+2017-09-18 22:37:54,282 INFO  [Log] Closing the Browser 
+2017-09-18 22:38:06,968 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-18 22:38:06,970 INFO  [Log] X 
+2017-09-18 22:38:06,971 INFO  [Log] X 
+2017-09-18 22:38:06,972 INFO  [Log] X 
+2017-09-18 22:38:06,972 INFO  [Log] X 
+2017-09-18 22:38:11,626 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-09-18 22:38:11,627 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:38:11,628 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:38:11,629 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:38:11,631 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:38:11,633 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:44,032 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:44,032 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:44,032 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:39:44,032 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:44,032 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:44,034 INFO  [Log] Opening Browser 
+2017-09-18 22:39:47,131 INFO  [Log] Chrome browser started 
+2017-09-18 22:39:47,894 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-18 22:39:51,900 INFO  [Log] Entering the text in txt_Username 
+2017-09-18 22:39:52,320 INFO  [Log] Entering the text in txt_Password 
+2017-09-18 22:39:52,551 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-18 22:39:53,688 INFO  [Log] Wait for 5 seconds 
+2017-09-18 22:39:56,191 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-18 22:39:56,191 INFO  [Log] X 
+2017-09-18 22:39:56,191 INFO  [Log] X 
+2017-09-18 22:39:56,191 INFO  [Log] X 
+2017-09-18 22:39:56,191 INFO  [Log] X 
+2017-09-18 22:39:56,191 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:56,191 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:56,192 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:39:56,192 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:56,192 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:39:56,192 INFO  [Log] Clicking on Webelement btn_Tshirts 
+2017-09-18 22:39:57,383 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
+2017-09-18 22:40:07,448 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir13332_15803}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 73a5d23752bbef49b27e8ab92b9a9e53
+*** Element info: {Using=xpath, value=title_Tshirts} 
+2017-09-18 22:40:07,493 INFO  [Log] Closing the Browser 
+2017-09-18 22:40:08,887 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-18 22:40:08,887 INFO  [Log] X 
+2017-09-18 22:40:08,887 INFO  [Log] X 
+2017-09-18 22:40:08,887 INFO  [Log] X 
+2017-09-18 22:40:08,887 INFO  [Log] X 
+2017-09-18 22:40:08,961 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-09-18 22:40:08,961 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:40:08,961 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:40:08,961 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-18 22:40:08,961 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:40:08,961 INFO  [Log] **************************************************************************************** 
+2017-09-18 22:40:08,962 INFO  [Log] Clicking on Webelement btn_Logout 
+2017-09-18 22:40:08,963 ERROR [Log] Not able to click --- Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver 
+2017-09-18 22:40:09,033 INFO  [Log] Closing the Browser 
+2017-09-18 22:40:09,075 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-18 22:40:09,075 INFO  [Log] X 
+2017-09-18 22:40:09,076 INFO  [Log] X 
+2017-09-18 22:40:09,076 INFO  [Log] X 
+2017-09-18 22:40:09,076 INFO  [Log] X 
+2017-09-18 22:40:09,108 INFO  [Log] Clicking on Webelement btn_Logout 
+2017-09-18 22:40:09,109 ERROR [Log] Not able to click --- Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver 
+2017-09-18 22:40:09,168 INFO  [Log] Closing the Browser 

@@ -1,0 +1,6 @@
+txt_Username=//*[@id="email"]
+txt_Password=//*[@id="passwd"]
+btn_Login=//*[@id='SubmitLogin']
+btn_Logout=//*[@id="header"]/div[2]/div/div/nav/div[2]/a
+btn_Tshirts=//*[@id="block_top_menu"]/ul/li[3]/a
+title_Tshirts=//*[@id="center_column"]/div[1]/div/div/spa
