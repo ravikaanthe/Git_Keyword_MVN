@@ -1,54 +1,54 @@
-2017-09-20 19:01:52,937 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:01:52,937 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:01:52,937 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-20 19:01:52,937 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:01:52,937 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:01:52,937 INFO  [Log] Opening Browser 
-2017-09-20 19:01:56,018 INFO  [Log] Chrome browser started 
-2017-09-20 19:01:56,119 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
-2017-09-20 19:01:59,837 INFO  [Log] Entering the text in txt_Username 
-2017-09-20 19:02:00,175 INFO  [Log] Entering the text in txt_Password 
-2017-09-20 19:02:00,378 INFO  [Log] Clicking on Webelement btn_Login 
-2017-09-20 19:02:01,569 INFO  [Log] Wait for 5 seconds 
-2017-09-20 19:02:03,956 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-20 19:02:03,956 INFO  [Log] X 
-2017-09-20 19:02:03,956 INFO  [Log] X 
-2017-09-20 19:02:03,956 INFO  [Log] X 
-2017-09-20 19:02:03,956 INFO  [Log] X 
-2017-09-20 19:02:03,956 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:03,956 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:03,956 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-20 19:02:03,956 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:03,956 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:03,956 INFO  [Log] Clicking on Webelement btn_Tshirts 
-2017-09-20 19:02:05,417 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
-2017-09-20 19:02:15,459 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+2017-09-20 19:15:53,163 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:15:53,163 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:15:53,163 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-20 19:15:53,163 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:15:53,163 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:15:53,163 INFO  [Log] Opening Browser 
+2017-09-20 19:15:56,495 INFO  [Log] Chrome browser started 
+2017-09-20 19:15:56,662 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-20 19:16:00,676 INFO  [Log] Entering the text in txt_Username 
+2017-09-20 19:16:01,078 INFO  [Log] Entering the text in txt_Password 
+2017-09-20 19:16:01,245 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-20 19:16:02,386 INFO  [Log] Wait for 5 seconds 
+2017-09-20 19:16:04,751 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-20 19:16:04,751 INFO  [Log] X 
+2017-09-20 19:16:04,751 INFO  [Log] X 
+2017-09-20 19:16:04,751 INFO  [Log] X 
+2017-09-20 19:16:04,751 INFO  [Log] X 
+2017-09-20 19:16:04,752 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:04,752 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:04,752 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-20 19:16:04,752 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:04,752 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:04,752 INFO  [Log] Clicking on Webelement btn_Tshirts 
+2017-09-20 19:16:06,065 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
+2017-09-20 19:16:16,127 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
   (Session info: chrome=60.0.3112.113)
   (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.04 seconds
+Command duration or timeout: 10.06 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir9388_2627}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 094c7da811ca37e4c78d61b38e7755bd
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir10260_25449}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 111eff1ba67368ebba3d175943fadb2a
 *** Element info: {Using=xpath, value=title_Tshirts} 
-2017-09-20 19:02:15,530 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-20 19:02:15,531 INFO  [Log] X 
-2017-09-20 19:02:15,531 INFO  [Log] X 
-2017-09-20 19:02:15,531 INFO  [Log] X 
-2017-09-20 19:02:15,531 INFO  [Log] X 
-2017-09-20 19:02:15,569 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
-2017-09-20 19:02:15,570 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:15,570 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:15,570 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-20 19:02:15,570 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:15,570 INFO  [Log] **************************************************************************************** 
-2017-09-20 19:02:15,570 INFO  [Log] Clicking on Webelement btn_Logout 
-2017-09-20 19:02:16,881 INFO  [Log] Closing the Browser 
-2017-09-20 19:02:18,166 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-20 19:02:18,166 INFO  [Log] X 
-2017-09-20 19:02:18,166 INFO  [Log] X 
-2017-09-20 19:02:18,167 INFO  [Log] X 
-2017-09-20 19:02:18,167 INFO  [Log] X 
-2017-09-20 19:02:18,170 INFO  [Log] Closing the Browser 
+2017-09-20 19:16:16,207 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-20 19:16:16,207 INFO  [Log] X 
+2017-09-20 19:16:16,207 INFO  [Log] X 
+2017-09-20 19:16:16,207 INFO  [Log] X 
+2017-09-20 19:16:16,207 INFO  [Log] X 
+2017-09-20 19:16:16,238 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-09-20 19:16:16,238 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:16,238 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:16,238 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-20 19:16:16,238 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:16,238 INFO  [Log] **************************************************************************************** 
+2017-09-20 19:16:16,238 INFO  [Log] Clicking on Webelement btn_Logout 
+2017-09-20 19:16:17,437 INFO  [Log] Closing the Browser 
+2017-09-20 19:16:18,673 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-20 19:16:18,673 INFO  [Log] X 
+2017-09-20 19:16:18,673 INFO  [Log] X 
+2017-09-20 19:16:18,673 INFO  [Log] X 
+2017-09-20 19:16:18,673 INFO  [Log] X 
+2017-09-20 19:16:18,685 INFO  [Log] Closing the Browser 
