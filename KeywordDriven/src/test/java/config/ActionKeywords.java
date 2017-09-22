@@ -2,6 +2,7 @@ package config;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ById;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -44,6 +45,7 @@ public class ActionKeywords {
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("IE browser started");}
 				else if(data.equals("Mozilla")){
+					System.setProperty("webdriver.gecko.driver","C:\\JARs\\geckodriver-v0.18.0-win64\\geckodriver.exe");
 					driver=new FirefoxDriver();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("Mozilla browser started");}
@@ -107,7 +109,7 @@ public class ActionKeywords {
 			try{
 				Log.info("Clicking on Webelement "+ object);
 				driver.findElement(By.xpath(OR.getProperty(object))).click();
-				logger.log(LogStatus.PASS, "Succefully Clicked on button"+ object);
+				logger.log(LogStatus.PASS, "Succefully Clicked on button "+ object);
 			}catch(Exception e){
 				Log.error("Not able to click --- " + e.getMessage());
 				logger.log(LogStatus.FAIL, "Unable to Click on button "+ object);
@@ -156,12 +158,41 @@ public class ActionKeywords {
 		public static void compareGetText(String object, String data){
 			try{
 				Log.info("Comparing the text '" +data+ "' with '"+object+"'" );
-				String acutalText = driver.findElement(By.xpath(object)).getText();
-				Assert.assertEquals(data, acutalText);
+				String acutalText = driver.findElement(By.xpath(object)).getAttribute("innerText");
+				if(acutalText.equals(data))
+					logger.log(LogStatus.PASS, "Expected text '"+data+ "'is same as actual text'"+ object);
 			}catch(Exception e){
 				Log.error("Not able to compare the text --- " + e.getMessage());
-				logger.log(LogStatus.FAIL, "Unable to compare the text"+ object);
+				logger.log(LogStatus.FAIL, "Unable to compare the text "+ object);
 				DriverScriptTest.bResult = false;
+			}
+			
+		}
+		
+		public static void verifyElement(String object, String data){
+			try{
+				Log.info("Verifying the element '"+ object);
+				driver.findElement(By.xpath(OR.getProperty(object))).isDisplayed();
+				logger.log(LogStatus.PASS, "Webelement '"+ object+"'displayed on page");
+			}catch(Exception e){
+				Log.error("Unable to find Webelement --- " + e.getMessage());
+				logger.log(LogStatus.FAIL, "Unable to find Webelement "+ object);
+	 			DriverScriptTest.bResult = false;
+			}
+			
+		}
+		
+		public static void compareLinkText(String object, String data){
+			try{
+				Log.info("Comparing link text '"+ object);
+				String lnktxt=driver.findElement(By.xpath(OR.getProperty(object))).getAttribute("innerText");
+				if (lnktxt.equals(data))
+				logger.log(LogStatus.PASS, "Link text is matching expcted value-"+data);
+				
+			}catch(Exception e){
+				Log.error("Link text is not matching with expected value --- " + e.getMessage());
+				logger.log(LogStatus.FAIL, "Link text is not matched with expected value "+ data);
+	 			DriverScriptTest.bResult = false;
 			}
 			
 		}

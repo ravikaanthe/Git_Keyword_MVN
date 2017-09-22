@@ -165,7 +165,7 @@ public class DriverScriptTest {
     private static void execute_Actions() throws Exception {
 		//This is a loop which will run for the number of actions in the Action Keyword class 
 		//method variable contain all the method and method.length returns the total number of methods
-		for(int i = 0;i < method.length;i++){
+		for(int i = 0;i <= method.length;i++){
 			//This is now comparing the method name with the ActionKeyword value got from excel
 			if(method[i].getName().equals(sActionKeyword)){
 				//In case of match found, it will execute the matched method
