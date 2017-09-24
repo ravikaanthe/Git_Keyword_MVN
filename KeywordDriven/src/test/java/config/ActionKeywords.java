@@ -26,7 +26,7 @@ public class ActionKeywords {
 		public static ExtentTest logger;
 		
 		public ActionKeywords(){
-			reports=new ExtentReports("src/test/java/Reports/Report.html");
+			reports=new ExtentReports(Constants.Extent_Reports);
 		}
 		//This block of code will decide which browser type to start
 		//All the methods in this class now accept 'Object' name as an argument
