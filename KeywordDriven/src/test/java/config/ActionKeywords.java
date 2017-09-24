@@ -2,12 +2,12 @@ package config;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ById;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.Assert;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -37,16 +37,19 @@ public class ActionKeywords {
 				if (data.equals("Chrome")){
 					System.setProperty("webdriver.chrome.driver","C:\\JARs\\chromedriver_win32\\chromedriver.exe");
 					driver=new ChromeDriver();	
+					driver.manage().window().maximize();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("Chrome browser started");}
 				else if (data.equals("IE")){
 					//You may need to change the code here to start IE Driver
 					driver=new InternetExplorerDriver();
+					driver.manage().window().maximize();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("IE browser started");}
 				else if(data.equals("Mozilla")){
 					System.setProperty("webdriver.gecko.driver","C:\\JARs\\geckodriver-v0.18.0-win64\\geckodriver.exe");
 					driver=new FirefoxDriver();
+					driver.manage().window().maximize();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("Mozilla browser started");}
 				int implicitWaitTime=(10);
@@ -121,7 +124,7 @@ public class ActionKeywords {
 		public static void waitFor(String object, String data) throws Exception{
 			try{
 				Log.info("Wait for 5 seconds");
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			}catch(Exception e){
 				Log.error("Not able to Wait --- " + e.getMessage());
 				DriverScriptTest.bResult = false;
@@ -173,13 +176,28 @@ public class ActionKeywords {
 			try{
 				Log.info("Verifying the element '"+ object);
 				driver.findElement(By.xpath(OR.getProperty(object))).isDisplayed();
+				elementHighlight(driver.findElement(By.xpath(OR.getProperty(object))));
+				Thread.sleep(600);
 				logger.log(LogStatus.PASS, "Webelement '"+ object+"'displayed on page");
 			}catch(Exception e){
 				Log.error("Unable to find Webelement --- " + e.getMessage());
+				elementHighlight(driver.findElement(By.xpath(OR.getProperty(object))));
 				logger.log(LogStatus.FAIL, "Unable to find Webelement "+ object);
 	 			DriverScriptTest.bResult = false;
 			}
 			
+		}
+		
+		public static void elementHighlight(WebElement element) {
+			for (int i = 0; i < 2; i++) {
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript(
+						"arguments[0].setAttribute('style', arguments[1]);",
+						element, "color: blue; border: 3px solid blue;");
+				js.executeScript(
+						"arguments[0].setAttribute('style', arguments[1]);",
+						element, "");
+			}
 		}
 		
 		public static void compareLinkText(String object, String data){

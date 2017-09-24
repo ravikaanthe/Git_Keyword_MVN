@@ -5,3 +5,8 @@ btn_Logout=//*[@id="header"]/div[2]/div/div/nav/div[2]/a
 btn_Tshirts=//*[@id="block_top_menu"]/ul/li[3]/a
 title_Tshirts=//*[@id="center_column"]/div[1]/div/div/span
 lnk_custaccount=//*[@id="header"]/div[2]/div/div/nav/div[1]/a/span
+btn_OrderHistory=//*[@id="center_column"]/div/div[1]/ul/li[1]/a/span
+btn_MycreditSlips=//*[@id="center_column"]/div/div[1]/ul/li[2]/a/span
+btn_Myaddress=//*[@id="center_column"]/div/div[1]/ul/li[3]/a/span
+btn_Mypersonalinfo=//*[@id="center_column"]/div/div[1]/ul/li[4]/a/span
+btn_Mywhishlist=//*[@id="center_column"]/div/div[2]/ul/li/a/span
