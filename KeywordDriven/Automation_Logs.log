@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2017-09-24 16:30:19,046 INFO  [Log] **************************************************************************************** 
 2017-09-24 16:30:19,046 INFO  [Log] **************************************************************************************** 
 2017-09-24 16:30:19,046 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
@@ -54,16 +55,152 @@
 2017-09-24 16:30:36,863 INFO  [Log] Clicking on Webelement btn_Tshirts 
 2017-09-24 16:30:55,412 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
 2017-09-24 16:31:05,440 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+=======
+<<<<<<< HEAD
+2017-09-24 15:40:22,859 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:22,859 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:22,859 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:40:22,859 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:22,859 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:22,859 INFO  [Log] Opening Browser 
+2017-09-24 15:40:27,282 INFO  [Log] Chrome browser started 
+2017-09-24 15:40:27,467 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-24 15:40:30,439 INFO  [Log] Verifying the element 'txt_Username 
+2017-09-24 15:40:31,316 INFO  [Log] Entering the text in txt_Username 
+2017-09-24 15:40:31,612 INFO  [Log] Verifying the element 'txt_Password 
+2017-09-24 15:40:32,394 INFO  [Log] Entering the text in txt_Password 
+2017-09-24 15:40:32,788 INFO  [Log] Verifying the element 'btn_Login 
+2017-09-24 15:40:33,587 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-24 15:40:35,118 INFO  [Log] Wait for 5 seconds 
+2017-09-24 15:40:36,492 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:40:36,492 INFO  [Log] X 
+2017-09-24 15:40:36,492 INFO  [Log] X 
+2017-09-24 15:40:36,492 INFO  [Log] X 
+2017-09-24 15:40:36,492 INFO  [Log] X 
+2017-09-24 15:40:36,492 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:36,492 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:36,492 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_Account       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:40:36,492 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:36,492 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:36,492 INFO  [Log] Comparing link text 'lnk_custaccount 
+2017-09-24 15:40:36,561 INFO  [Log] Wait for 5 seconds 
+2017-09-24 15:40:37,661 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:40:37,661 INFO  [Log] X 
+2017-09-24 15:40:37,661 INFO  [Log] X 
+2017-09-24 15:40:37,661 INFO  [Log] X 
+2017-09-24 15:40:37,661 INFO  [Log] X 
+2017-09-24 15:40:37,661 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:37,661 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:37,661 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_MyAccount_Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:40:37,661 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:37,661 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:37,661 INFO  [Log] Verifying the element 'btn_OrderHistory 
+2017-09-24 15:40:38,362 INFO  [Log] Verifying the element 'btn_MycreditSlips 
+2017-09-24 15:40:39,131 INFO  [Log] Verifying the element 'btn_Myaddress 
+2017-09-24 15:40:39,932 INFO  [Log] Verifying the element 'btn_Mypersonalinfo 
+2017-09-24 15:40:40,678 INFO  [Log] Verifying the element 'btn_Mywhishlist 
+2017-09-24 15:40:41,416 INFO  [Log] Verifying the element 'lnk_Women 
+2017-09-24 15:40:42,279 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:40:42,279 INFO  [Log] X 
+2017-09-24 15:40:42,279 INFO  [Log] X 
+2017-09-24 15:40:42,279 INFO  [Log] X 
+2017-09-24 15:40:42,279 INFO  [Log] X 
+2017-09-24 15:40:42,279 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:42,279 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:42,279 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:40:42,279 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:42,279 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:42,279 INFO  [Log] Clicking on Webelement btn_Tshirts 
+2017-09-24 15:40:43,602 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
+2017-09-24 15:40:53,661 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+=======
+2017-09-24 15:57:14,289 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:14,289 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:14,289 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:57:14,289 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:14,289 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:14,289 INFO  [Log] Opening Browser 
+2017-09-24 15:57:18,363 INFO  [Log] Chrome browser started 
+2017-09-24 15:57:18,543 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-24 15:57:23,037 INFO  [Log] Verifying the element 'txt_Username 
+2017-09-24 15:57:23,887 INFO  [Log] Entering the text in txt_Username 
+2017-09-24 15:57:24,188 INFO  [Log] Verifying the element 'txt_Password 
+2017-09-24 15:57:24,971 INFO  [Log] Entering the text in txt_Password 
+2017-09-24 15:57:25,167 INFO  [Log] Verifying the element 'btn_Login 
+2017-09-24 15:57:25,990 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-24 15:57:54,191 INFO  [Log] Wait for 5 seconds 
+2017-09-24 15:57:55,566 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:57:55,566 INFO  [Log] X 
+2017-09-24 15:57:55,566 INFO  [Log] X 
+2017-09-24 15:57:55,566 INFO  [Log] X 
+2017-09-24 15:57:55,566 INFO  [Log] X 
+2017-09-24 15:57:55,566 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:55,566 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:55,566 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_Account       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:57:55,566 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:55,566 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:55,566 INFO  [Log] Comparing link text 'lnk_custaccount 
+2017-09-24 15:57:55,619 INFO  [Log] Wait for 5 seconds 
+2017-09-24 15:57:56,781 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:57:56,781 INFO  [Log] X 
+2017-09-24 15:57:56,781 INFO  [Log] X 
+2017-09-24 15:57:56,781 INFO  [Log] X 
+2017-09-24 15:57:56,781 INFO  [Log] X 
+2017-09-24 15:57:56,782 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:56,782 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:56,782 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_MyAccount_Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:57:56,782 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:56,782 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:57:56,782 INFO  [Log] Verifying the element 'btn_OrderHistory 
+2017-09-24 15:57:57,527 INFO  [Log] Verifying the element 'btn_MycreditSlips 
+2017-09-24 15:57:58,265 INFO  [Log] Verifying the element 'btn_Myaddress 
+2017-09-24 15:57:59,027 INFO  [Log] Verifying the element 'btn_Mypersonalinfo 
+2017-09-24 15:57:59,781 INFO  [Log] Verifying the element 'btn_Mywhishlist 
+2017-09-24 15:58:00,512 INFO  [Log] Verifying the element 'lnk_Women 
+2017-09-24 15:58:01,329 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:58:01,329 INFO  [Log] X 
+2017-09-24 15:58:01,329 INFO  [Log] X 
+2017-09-24 15:58:01,329 INFO  [Log] X 
+2017-09-24 15:58:01,329 INFO  [Log] X 
+2017-09-24 15:58:01,329 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:01,329 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:01,329 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:58:01,329 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:01,329 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:01,329 INFO  [Log] Clicking on Webelement btn_Tshirts 
+2017-09-24 15:58:04,986 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
+2017-09-24 15:58:15,025 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
   (Session info: chrome=60.0.3112.113)
   (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+<<<<<<< HEAD
 Command duration or timeout: 10.01 seconds
+=======
+<<<<<<< HEAD
+Command duration or timeout: 10.05 seconds
+=======
+Command duration or timeout: 10.04 seconds
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir15680_16504}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
 Session ID: 2138539de79f05c58b76bc6cf7d58dbd
+=======
+<<<<<<< HEAD
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir12868_2329}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2e758efb22ffb7602291b20817c8c9b8
+=======
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir11252_27521}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: dab0b5ba33598a0f91376a762eb6554e
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
 *** Element info: {Using=xpath, value=title_Tshirts} 
+<<<<<<< HEAD
 2017-09-24 16:31:05,493 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
 2017-09-24 16:31:05,493 INFO  [Log] X 
 2017-09-24 16:31:05,493 INFO  [Log] X 
@@ -83,3 +220,46 @@ Session ID: 2138539de79f05c58b76bc6cf7d58dbd
 2017-09-24 16:31:08,013 INFO  [Log] X 
 2017-09-24 16:31:08,013 INFO  [Log] X 
 2017-09-24 16:31:08,022 INFO  [Log] Closing the Browser 
+=======
+<<<<<<< HEAD
+2017-09-24 15:40:53,724 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:40:53,724 INFO  [Log] X 
+2017-09-24 15:40:53,724 INFO  [Log] X 
+2017-09-24 15:40:53,724 INFO  [Log] X 
+2017-09-24 15:40:53,724 INFO  [Log] X 
+2017-09-24 15:40:53,756 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-09-24 15:40:53,756 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:53,756 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:53,756 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:40:53,756 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:53,756 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:40:53,756 INFO  [Log] Clicking on Webelement btn_Logout 
+2017-09-24 15:40:55,194 INFO  [Log] Closing the Browser 
+2017-09-24 15:40:57,173 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:40:57,173 INFO  [Log] X 
+2017-09-24 15:40:57,173 INFO  [Log] X 
+2017-09-24 15:40:57,173 INFO  [Log] X 
+2017-09-24 15:40:57,173 INFO  [Log] X 
+2017-09-24 15:40:57,188 INFO  [Log] Closing the Browser 
+=======
+2017-09-24 15:58:15,094 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:58:15,094 INFO  [Log] X 
+2017-09-24 15:58:15,094 INFO  [Log] X 
+2017-09-24 15:58:15,094 INFO  [Log] X 
+2017-09-24 15:58:15,094 INFO  [Log] X 
+2017-09-24 15:58:15,125 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-09-24 15:58:15,125 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:15,125 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:15,125 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-24 15:58:15,125 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:15,125 INFO  [Log] **************************************************************************************** 
+2017-09-24 15:58:15,125 INFO  [Log] Clicking on Webelement btn_Logout 
+2017-09-24 15:58:16,606 INFO  [Log] Closing the Browser 
+2017-09-24 15:58:17,870 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-24 15:58:17,870 INFO  [Log] X 
+2017-09-24 15:58:17,870 INFO  [Log] X 
+2017-09-24 15:58:17,870 INFO  [Log] X 
+2017-09-24 15:58:17,870 INFO  [Log] X 
+2017-09-24 15:58:17,870 INFO  [Log] Closing the Browser 
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
+>>>>>>> branch 'master' of https://github.com/ravikaanthe/Git_Keyword_MVN.git
