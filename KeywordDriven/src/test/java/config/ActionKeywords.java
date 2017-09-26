@@ -204,6 +204,8 @@ public class ActionKeywords {
 			try{
 				Log.info("Comparing link text '"+ object);
 				String lnktxt=driver.findElement(By.xpath(OR.getProperty(object))).getAttribute("innerText");
+				elementHighlight(driver.findElement(By.xpath(OR.getProperty(object))));
+				Thread.sleep(600);
 				if (lnktxt.equals(data))
 				logger.log(LogStatus.PASS, "Link text is matching expcted value-"+data);
 				

@@ -1,84 +1,87 @@
-2017-09-25 23:45:04,784 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:04,784 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:04,784 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-25 23:45:04,784 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:04,784 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:04,784 INFO  [Log] Opening Browser 
-2017-09-25 23:45:09,169 INFO  [Log] Chrome browser started 
-2017-09-25 23:45:09,303 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
-2017-09-25 23:45:12,696 INFO  [Log] Verifying the element 'txt_Username 
-2017-09-25 23:45:13,523 INFO  [Log] Entering the text in txt_Username 
-2017-09-25 23:45:13,805 INFO  [Log] Verifying the element 'txt_Password 
-2017-09-25 23:45:14,578 INFO  [Log] Entering the text in txt_Password 
-2017-09-25 23:45:14,732 INFO  [Log] Verifying the element 'btn_Login 
-2017-09-25 23:45:15,528 INFO  [Log] Clicking on Webelement btn_Login 
-2017-09-25 23:45:16,730 INFO  [Log] Wait for 5 seconds 
-2017-09-25 23:45:18,020 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-25 23:45:18,020 INFO  [Log] X 
-2017-09-25 23:45:18,020 INFO  [Log] X 
-2017-09-25 23:45:18,020 INFO  [Log] X 
-2017-09-25 23:45:18,020 INFO  [Log] X 
-2017-09-25 23:45:18,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:18,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:18,020 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_Account       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-25 23:45:18,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:18,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:18,020 INFO  [Log] Comparing link text 'lnk_custaccount 
-2017-09-25 23:45:18,073 INFO  [Log] Wait for 5 seconds 
-2017-09-25 23:45:19,220 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-25 23:45:19,220 INFO  [Log] X 
-2017-09-25 23:45:19,220 INFO  [Log] X 
-2017-09-25 23:45:19,220 INFO  [Log] X 
-2017-09-25 23:45:19,220 INFO  [Log] X 
-2017-09-25 23:45:19,220 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:19,220 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:19,220 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_MyAccount_Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-25 23:45:19,220 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:19,220 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:19,220 INFO  [Log] Verifying the element 'btn_OrderHistory 
-2017-09-25 23:45:19,968 INFO  [Log] Verifying the element 'btn_MycreditSlips 
-2017-09-25 23:45:20,752 INFO  [Log] Verifying the element 'btn_Myaddress 
-2017-09-25 23:45:21,452 INFO  [Log] Verifying the element 'btn_Mypersonalinfo 
-2017-09-25 23:45:22,170 INFO  [Log] Verifying the element 'btn_Mywhishlist 
-2017-09-25 23:45:23,020 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-25 23:45:23,020 INFO  [Log] X 
-2017-09-25 23:45:23,020 INFO  [Log] X 
-2017-09-25 23:45:23,020 INFO  [Log] X 
-2017-09-25 23:45:23,020 INFO  [Log] X 
-2017-09-25 23:45:23,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:23,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:23,020 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-25 23:45:23,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:23,020 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:23,020 INFO  [Log] Clicking on Webelement btn_Tshirts 
-2017-09-25 23:45:24,555 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
-2017-09-25 23:45:34,626 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
+2017-09-26 00:02:54,954 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:02:54,954 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:02:54,954 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-26 00:02:54,954 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:02:54,954 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:02:54,954 INFO  [Log] Opening Browser 
+2017-09-26 00:02:58,668 INFO  [Log] Chrome browser started 
+2017-09-26 00:02:58,804 INFO  [Log] Navigating to URL 'http://automationpractice.com/index.php?controller=authentication&back=my-account' 
+2017-09-26 00:03:01,975 INFO  [Log] Verifying the element 'txt_Username 
+2017-09-26 00:03:02,848 INFO  [Log] Entering the text in txt_Username 
+2017-09-26 00:03:03,172 INFO  [Log] Verifying the element 'txt_Password 
+2017-09-26 00:03:03,929 INFO  [Log] Entering the text in txt_Password 
+2017-09-26 00:03:04,150 INFO  [Log] Verifying the element 'btn_Login 
+2017-09-26 00:03:04,941 INFO  [Log] Clicking on Webelement btn_Login 
+2017-09-26 00:03:06,281 INFO  [Log] Wait for 5 seconds 
+2017-09-26 00:03:07,597 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-26 00:03:07,597 INFO  [Log] X 
+2017-09-26 00:03:07,597 INFO  [Log] X 
+2017-09-26 00:03:07,597 INFO  [Log] X 
+2017-09-26 00:03:07,597 INFO  [Log] X 
+2017-09-26 00:03:07,597 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:07,597 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:07,597 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_Account       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-26 00:03:07,597 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:07,597 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:07,597 INFO  [Log] Comparing link text 'lnk_custaccount 
+2017-09-26 00:03:08,334 INFO  [Log] Wait for 5 seconds 
+2017-09-26 00:03:09,481 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-26 00:03:09,481 INFO  [Log] X 
+2017-09-26 00:03:09,481 INFO  [Log] X 
+2017-09-26 00:03:09,481 INFO  [Log] X 
+2017-09-26 00:03:09,481 INFO  [Log] X 
+2017-09-26 00:03:09,481 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:09,481 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:09,481 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify_MyAccount_Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-26 00:03:09,481 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:09,481 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:09,481 INFO  [Log] Verifying the element 'btn_OrderHistory 
+2017-09-26 00:03:10,251 INFO  [Log] Verifying the element 'btn_MycreditSlips 
+2017-09-26 00:03:10,998 INFO  [Log] Verifying the element 'btn_Myaddress 
+2017-09-26 00:03:11,824 INFO  [Log] Verifying the element 'btn_Mypersonalinfo 
+2017-09-26 00:03:12,577 INFO  [Log] Verifying the element 'btn_Mywhishlist 
+2017-09-26 00:03:13,324 INFO  [Log] Verifying the element 'lnk_Women 
+2017-09-26 00:03:14,075 INFO  [Log] Verifying the element 'lnk_Dresses 
+2017-09-26 00:03:14,823 INFO  [Log] Verifying the element 'lnk_Tshirts 
+2017-09-26 00:03:15,636 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-26 00:03:15,636 INFO  [Log] X 
+2017-09-26 00:03:15,636 INFO  [Log] X 
+2017-09-26 00:03:15,636 INFO  [Log] X 
+2017-09-26 00:03:15,636 INFO  [Log] X 
+2017-09-26 00:03:15,636 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:15,636 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:15,636 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Menu_Navigation       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-26 00:03:15,636 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:15,636 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:15,636 INFO  [Log] Clicking on Webelement btn_Tshirts 
+2017-09-26 00:03:17,218 INFO  [Log] Comparing the text 'T-shirts' with 'title_Tshirts' 
+2017-09-26 00:03:27,221 ERROR [Log] Not able to compare the text --- no such element: Unable to locate element: {"method":"xpath","selector":"title_Tshirts"}
   (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.06 seconds
+Command duration or timeout: 10.00 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir3788_9735}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 3fcc9376bab96f5d0817180ac4620081
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\ravik\AppData\Local\Temp\scoped_dir6020_29128}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 47979f4558274467bcb71fccef19eed6
 *** Element info: {Using=xpath, value=title_Tshirts} 
-2017-09-25 23:45:34,682 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-25 23:45:34,683 INFO  [Log] X 
-2017-09-25 23:45:34,683 INFO  [Log] X 
-2017-09-25 23:45:34,683 INFO  [Log] X 
-2017-09-25 23:45:34,683 INFO  [Log] X 
-2017-09-25 23:45:34,712 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
-2017-09-25 23:45:34,712 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:34,713 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:34,713 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-09-25 23:45:34,713 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:34,713 INFO  [Log] **************************************************************************************** 
-2017-09-25 23:45:34,713 INFO  [Log] Clicking on Webelement btn_Logout 
-2017-09-25 23:45:35,955 INFO  [Log] Closing the Browser 
-2017-09-25 23:45:37,144 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-09-25 23:45:37,144 INFO  [Log] X 
-2017-09-25 23:45:37,144 INFO  [Log] X 
-2017-09-25 23:45:37,144 INFO  [Log] X 
-2017-09-25 23:45:37,144 INFO  [Log] X 
-2017-09-25 23:45:37,157 INFO  [Log] Closing the Browser 
+2017-09-26 00:03:27,268 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-26 00:03:27,268 INFO  [Log] X 
+2017-09-26 00:03:27,268 INFO  [Log] X 
+2017-09-26 00:03:27,268 INFO  [Log] X 
+2017-09-26 00:03:27,268 INFO  [Log] X 
+2017-09-26 00:03:27,305 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-09-26 00:03:27,305 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:27,305 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:27,305 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Logout_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-09-26 00:03:27,305 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:27,305 INFO  [Log] **************************************************************************************** 
+2017-09-26 00:03:27,305 INFO  [Log] Clicking on Webelement btn_Logout 
+2017-09-26 00:03:35,805 INFO  [Log] Closing the Browser 
+2017-09-26 00:03:37,456 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-09-26 00:03:37,456 INFO  [Log] X 
+2017-09-26 00:03:37,456 INFO  [Log] X 
+2017-09-26 00:03:37,456 INFO  [Log] X 
+2017-09-26 00:03:37,456 INFO  [Log] X 
+2017-09-26 00:03:37,467 INFO  [Log] Closing the Browser 
