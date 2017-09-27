@@ -25,7 +25,9 @@ public class ActionKeywords {
 		public static ExtentReports reports;
 		public static ExtentTest logger;
 		
+		//Constructor
 		public ActionKeywords(){
+			//Create an object of ExtentReports class
 			reports=new ExtentReports(Constants.Extent_Reports);
 		}
 		//This block of code will decide which browser type to start

@@ -13,8 +13,8 @@ import executionEngine.DriverScriptTest;
 
 public class ExcelUtils {
 	
+	private static XSSFWorkbook ExcelWBook;
 	private static XSSFSheet ExcelWSheet;
-    private static XSSFWorkbook ExcelWBook;
     private static XSSFCell Cell;
     public static XSSFRow Row;
 
@@ -22,8 +22,10 @@ public class ExcelUtils {
 //Pass Excel Path and SheetName as Arguments to this method
 public static void setExcelFile(String Path) throws Exception {
 	try{
+		//Create an object of FileInputStream class to read excel file
 		FileInputStream ExcelFile = new FileInputStream(Path);
-        ExcelWBook = new XSSFWorkbook(ExcelFile);
+        //Create an object of XSSFWorkbook class to load workbook
+		ExcelWBook = new XSSFWorkbook(ExcelFile);
         //Remove below sheet name argument as we have two sheet names, one is from DataEgnine, another from test cases. Modify all below functions to add an extra argument of sheet name 
         //ExcelWSheet = ExcelWBook.getSheet(SheetName);
 	}catch(Exception e){

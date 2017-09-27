@@ -38,6 +38,7 @@ public class DriverScriptTest {
 		actionKeywords = new ActionKeywords();
 		//This will load all the methods of the class 'ActionKeywords' in it.
                 //It will be like array of method, use the break point here and do the watch
+		//Reflection class gets all methods available in ActionKeywords class
 		method = actionKeywords.getClass().getMethods();
 	}
 
@@ -60,14 +61,14 @@ public class DriverScriptTest {
     	//Again a Constant Variable is used in place of Excel Sheet Name
     	//ExcelUtils.setExcelFile(sPath, Constants.Sheet_TestSteps);
     	
-    	//This is to start the Log4j logging in the test case
+    	//This is to start the Log4j logging in the test case using DOMConfigure class and method configure
     	DOMConfigurator.configure("Log4j.xml");
     	
     	//Declaring String variable for storing Object Repository path
     	String Path_OR = Constants.Path_OR;
     	//Creating file system object for Object Repository text/property file
     	FileInputStream fs=new FileInputStream(Path_OR);
-    	//Creating an Object of properties
+    	//Creating an Object of properties class to read properties from OR flat file
     	OR=new Properties(System.getProperties());
     	//Loading all the properties from Object Repository property file in to OR object
     	OR.load(fs);
@@ -91,10 +92,12 @@ public class DriverScriptTest {
 			//This is the condition statement on RunMode value
 			if (sRunMode.equals("Yes")){
 				//Start publishing the report using Extent Reports
+				//ExtentTest Class      Start test method from ExtentReports Class
 				actionKeywords.logger=actionKeywords.reports.startTest(sTestCaseID);
 				//Only if the value of Run Mode is 'Yes', this part of code will execute
 				iTestStep = ExcelUtils.getRowContains(sTestCaseID, Constants.Col_TestCaseID, Constants.Sheet_TestSteps);
 				iTestLastStep = ExcelUtils.getTestStepsCount(Constants.Sheet_TestSteps, sTestCaseID, iTestStep);
+				//call startTestCase method from log (log4j) class to log title of the test case in text file
 				Log.startTestCase(sTestCaseID);
 				//Setting the value of bResult variable to 'true' before starting every test step
 				bResult=true;
@@ -110,13 +113,13 @@ public class DriverScriptTest {
 					if(bResult==false){
 						//If 'false' then store the test case result as Fail
 						ExcelUtils.setCellData(Constants.KEYWORD_FAIL,iTestcase,Constants.Col_Result,Constants.Sheet_TestCases);
-						//End the test case in the logs
+						//Call endTestCase method from log (log4j) class to End the test case in the logs
 						Log.endTestCase(sTestCaseID);
 						//By this break statement, execution flow will not execute any more test step of the failed test case
 						break;
 						}
 				}
-				//End logging after executing every test case from Test Case sheet
+				//End logging after executing every test case from Test Case sheet using endTest method from ExtentReports class 
 				ActionKeywords.reports.endTest(actionKeywords.logger);
 				ActionKeywords.reports.flush();
 				
