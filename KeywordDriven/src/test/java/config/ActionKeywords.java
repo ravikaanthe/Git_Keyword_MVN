@@ -25,7 +25,7 @@ public class ActionKeywords {
 		public static ExtentReports reports;
 		public static ExtentTest logger;
 		
-		//Constructor
+		//Constructor to initialize the object of class ExtentReports
 		public ActionKeywords(){
 			//Create an object of ExtentReports class
 			reports=new ExtentReports(Constants.Extent_Reports);
