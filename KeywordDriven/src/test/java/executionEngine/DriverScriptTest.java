@@ -91,7 +91,7 @@ public class DriverScriptTest {
 			sRunMode = ExcelUtils.getCellData(iTestcase, Constants.Col_RunMode,Constants.Sheet_TestCases);
 			//This is the condition statement on RunMode value
 			if (sRunMode.equals("Yes")){
-				//Start publishing the report using Extent Reports in html file
+				//Start publishing the report using Extent Reports in HTML file
 				//ExtentTest Class      StartTest method from ExtentReports Class
 				ActionKeywords.logger=ActionKeywords.reports.startTest(sTestCaseID);
 				//Only if the value of Run Mode is 'Yes', this part of code will execute
