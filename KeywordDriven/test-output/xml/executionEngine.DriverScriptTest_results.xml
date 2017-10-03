@@ -1,13 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="35.860">
+           time="1.303">
   <properties />
+            <testcase name="Initialize" time="1.303" classname="executionEngine.DriverScriptTest">
+                <failure type="java.lang.reflect.InvocationTargetException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.reflect.InvocationTargetException
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  executionEngine.DriverScriptTest.execute_Actions(DriverScriptTest.java:186)
+  executionEngine.DriverScriptTest.execute_TestCase(DriverScriptTest.java:119)
+  executionEngine.DriverScriptTest.Initialize(DriverScriptTest.java:87)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:744)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+  org.testng.SuiteRunner.run(SuiteRunner.java:289)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+  org.testng.TestNG.runSuites(TestNG.java:1144)
+  org.testng.TestNG.run(TestNG.java:1115)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+Build info: version: '3.5.0', revision: '8def36e068', time: '2017-08-10T23:00:22.093Z'
+System info: host: 'LAPTOP-OUROT4H1', ip: '192.168.240.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: AndroidDriver
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+  org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+  org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+  org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:360)
+  java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+  java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+  java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+  java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+  java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+  java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+  java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+  java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+  java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:363)
+  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:137)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:254)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
+  io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:87)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:111)
+  io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:72)
+  config.ActionKeywords.mopenBrowser(ActionKeywords.java:284)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  executionEngine.DriverScriptTest.execute_Actions(DriverScriptTest.java:186)
+  executionEngine.DriverScriptTest.execute_TestCase(DriverScriptTest.java:119)
+  executionEngine.DriverScriptTest.Initialize(DriverScriptTest.java:87)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:744)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+  org.testng.SuiteRunner.run(SuiteRunner.java:289)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+  org.testng.TestNG.runSuites(TestNG.java:1144)
+  org.testng.TestNG.run(TestNG.java:1115)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="Initialize" time="35.860" classname="executionEngine.DriverScriptTest" />
-      
+  
 </testsuite>

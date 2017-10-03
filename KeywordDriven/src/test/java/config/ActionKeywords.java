@@ -1,13 +1,18 @@
 package config;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -17,6 +22,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import executionEngine.DriverScriptTest;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 import utility.Log;
 
 import static executionEngine.DriverScriptTest.OR;
@@ -250,6 +257,34 @@ public class ActionKeywords {
 			
 		}
 		
-		
+		public static void mopenBrowser(String object, String data) throws MalformedURLException{
+			
+			//Create an object of DesiredCapabilities class and specify android platform
+			DesiredCapabilities capabilities=DesiredCapabilities.android();
+			
+			//Set capability to execute test in Chrome Browser of mobile. MobileCapabilityType is an Interface 
+			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
+			
+			//Set the capability to execute our test in android platform
+			capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
+			
+			//We need to specify platform name as well along with above platform
+			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+			
+			//Set the Device name as well (you can give any name)
+			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "My Phone");
+			
+			//Set the Android Version as well
+			capabilities.setCapability(MobileCapabilityType.VERSION, "6.0.1");
+			
+			//Specify object of URL class and specify Appium server address
+			URL url= new URL("http://127.0.0.1:4723/wd/hub");
+			
+			//Create object of Android Driver class and pass the url and capability that we created
+			WebDriver mdriver=new AndroidDriver(url, capabilities);
+			
+			//Open URL
+			mdriver.get(Constants.URL);
+		}
 		
 }
