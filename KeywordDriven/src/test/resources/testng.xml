@@ -8,8 +8,6 @@
       <listener class-name="config.CustomListener"/>
  </listeners>
 
-
-
   <test name="Test">
     <classes>
       <class name="executionEngine.DriverScriptTest"/> 

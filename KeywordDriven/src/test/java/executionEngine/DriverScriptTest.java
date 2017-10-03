@@ -1,11 +1,20 @@
 package executionEngine;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
+
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import config.ActionKeywords;
 import config.Constants;
@@ -22,8 +31,7 @@ public class DriverScriptTest {
 	public static String sPageObject;
 	//This is reflection class object, declared as 'public static'
 	//So that it can be used outside the scope of main[] method
-	public static Method method[];
-	
+	public static Method method[];	
 	public static int iTestStep;
 	public static int iTestLastStep;
 	public static String sTestCaseID;
@@ -34,6 +42,8 @@ public class DriverScriptTest {
 	//Here we are instantiating a new object of class 'ActionKeywords'
 	//This is to test github push
 
+
+	
 	public DriverScriptTest() throws NoSuchMethodException, SecurityException{
 		actionKeywords = new ActionKeywords();
 		//This will load all the methods of the class 'ActionKeywords' in it.
@@ -76,9 +86,8 @@ public class DriverScriptTest {
     	DriverScriptTest startEngine = new DriverScriptTest();
     	startEngine.execute_TestCase();
     }
-    
-    private void execute_TestCase() throws Exception {
-    	
+
+    private void execute_TestCase() throws Exception {    	
     	//This will return the total number of test cases mentioned in the Test cases sheet
     	int iTotalTestCases = ExcelUtils.getRowCount(Constants.Sheet_TestCases);
     	//This loop will execute number of times equal to Total number of test cases
@@ -164,7 +173,7 @@ public class DriverScriptTest {
 	//As it is completely different set of logic, which revolves around the action only,
 	//It makes sense to keep it separate from the main driver script
 	//This is to execute test step (Action)
-    @Test
+
     private static void execute_Actions() throws Exception {
 		//This is a loop which will run for the number of actions in the Action Keyword class 
 		//method variable contain all the method and method.length returns the total number of methods

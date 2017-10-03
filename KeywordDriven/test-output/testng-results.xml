@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26530" started-at="2017-09-22T04:18:33Z" finished-at="2017-09-22T04:19:00Z">
+  <suite name="Suite" duration-ms="35887" started-at="2017-09-29T04:39:48Z" finished-at="2017-09-29T04:40:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26530" started-at="2017-09-22T04:18:33Z" finished-at="2017-09-22T04:19:00Z">
+    <test name="Test" duration-ms="35887" started-at="2017-09-29T04:39:48Z" finished-at="2017-09-29T04:40:24Z">
       <class name="executionEngine.DriverScriptTest">
-        <test-method status="PASS" signature="Initialize()[pri:0, instance:executionEngine.DriverScriptTest@4a87761d]" name="Initialize" duration-ms="26499" started-at="2017-09-22T00:18:33Z" finished-at="2017-09-22T00:19:00Z">
+        <test-method status="PASS" signature="Initialize()[pri:0, instance:executionEngine.DriverScriptTest@46238e3f]" name="Initialize" duration-ms="35860" started-at="2017-09-29T00:39:48Z" finished-at="2017-09-29T00:40:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialize -->
-        <test-method status="PASS" signature="execute_Actions()[pri:0, instance:executionEngine.DriverScriptTest@4a87761d]" name="execute_Actions" duration-ms="0" started-at="2017-09-22T00:19:00Z" finished-at="2017-09-22T00:19:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- execute_Actions -->
       </class> <!-- executionEngine.DriverScriptTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -8,7 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
+import com.beust.jcommander.Parameter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -38,24 +41,22 @@ public class ActionKeywords {
 				//If value of the parameter is Chrome, this will execute
 				if (data.equals("Chrome")){
 					System.setProperty("webdriver.chrome.driver","C:\\JARs\\chromedriver_win32\\chromedriver.exe");
-					driver=new ChromeDriver();	
+					driver=new ChromeDriver();
 					driver.manage().window().maximize();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("Chrome browser started");}
 				else if (data.equals("IE")){
 					//You may need to change the code here to start IE Driver
+					System.setProperty("webdriver.ie.driver","C:\\JARs\\MicrosoftWebDriver.exe");
 					driver=new InternetExplorerDriver();
 					driver.manage().window().maximize();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("IE browser started");}
 				else if(data.equals("Mozilla")){
-					System.setProperty("webdriver.gecko.driver","C:\\JARs\\geckodriver-v0.18.0-win64\\geckodriver.exe");
+					System.setProperty("webdriver.gecko.driver","C:\\JARs\\geckodriver-v0.19.0-win64\\geckodriver.exe");
 					driver=new FirefoxDriver();
-					driver.manage().window().maximize();
 					logger.log(LogStatus.PASS, "opened Browser -"+ data);
 					Log.info("Mozilla browser started");}
-				int implicitWaitTime=(10);
-				driver.manage().timeouts().implicitlyWait(implicitWaitTime, TimeUnit.SECONDS);
 				//This block will execute only in case of an exception
 			}catch(Exception e){
 				//This is to print the logs - Method Name & Error description/stack
@@ -218,5 +219,37 @@ public class ActionKeywords {
 			}
 			
 		}
+		
+		@Parameters({"object","data"})
+		public static void multiBrowser(String object, String data){
+			try{
+				Log.info("Opening Browser");
+				//If value of the parameter is Chrome, this will execute
+				if (object.equals("Chrome")){
+					System.setProperty("webdriver.chrome.driver","C:\\JARs\\chromedriver_win32\\chromedriver.exe");
+					driver=new ChromeDriver();
+					driver.manage().window().maximize();
+					Log.info("Chrome browser started");}
+				else if (object.equals("IE")){
+					//You may need to change the code here to start IE Driver
+					System.setProperty("webdriver.ie.driver","C:\\JARs\\MicrosoftWebDriver.exe");
+					driver=new InternetExplorerDriver();
+					driver.manage().window().maximize();
+					Log.info("IE browser started");}
+				else if(object.equals("Mozilla")){
+					System.setProperty("webdriver.gecko.driver","C:\\JARs\\geckodriver-v0.19.0-win64\\geckodriver.exe");
+					driver=new FirefoxDriver();
+					Log.info("Mozilla browser started");}
+				//This block will execute only in case of an exception
+			}catch(Exception e){
+				//This is to print the logs - Method Name & Error description/stack
+				Log.info("Not able to open Browser --- " + e.getMessage());
+				//Set the value of result variable to false
+				DriverScriptTest.bResult = false;
+			}
+			
+		}
+		
+		
 		
 }

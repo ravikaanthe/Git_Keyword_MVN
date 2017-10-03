@@ -40,5 +40,7 @@
 	<classpathentry kind="lib" path="C:/Ravikanth/Selenium Automation/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="C:/JARs/extentreports-2.40.2.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Android/java-client-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/JARs/selenium-server-standalone-3.5.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

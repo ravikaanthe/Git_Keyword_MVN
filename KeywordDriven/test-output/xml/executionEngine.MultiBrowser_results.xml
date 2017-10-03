@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test"
+<testsuite name="IE Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="35.860">
+           time="1.622">
   <properties />
   
   
-            <testcase name="Initialize" time="35.860" classname="executionEngine.DriverScriptTest" />
+            <testcase name="multiBrowser" time="1.622" classname="executionEngine.MultiBrowser" />
       
 </testsuite>
