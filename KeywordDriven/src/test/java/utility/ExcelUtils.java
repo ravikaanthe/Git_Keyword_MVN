@@ -114,7 +114,6 @@ public static int getTestStepsCount(String SheetName, String sTestCaseID, int iT
 	
 }
 
-@SuppressWarnings("static-access")
 //This method is use to write value in the excel sheet
 //This method accepts four arguments (Result, Row Number, Column Number & Sheet Name)
 public static void setCellData(String Result,  int RowNum, int ColNum, String SheetName) throws Exception    {
@@ -130,11 +129,11 @@ public static void setCellData(String Result,  int RowNum, int ColNum, String Sh
 				Cell.setCellValue(Result);
 				}
 			// Constant variables Test Data path and Test Data file name
-			FileOutputStream fileOut = new FileOutputStream(Constants.Path_TestData);
+			FileOutputStream fileOut = new FileOutputStream(SheetName);
 			ExcelWBook.write(fileOut);
 			//fileOut.flush();
 			fileOut.close();
-			ExcelWBook = new XSSFWorkbook(new FileInputStream(Constants.Path_TestData));
+			ExcelWBook = new XSSFWorkbook(new FileInputStream(SheetName));
 		 }catch(Exception e){
 			DriverScriptTest.bResult = false;
 			}

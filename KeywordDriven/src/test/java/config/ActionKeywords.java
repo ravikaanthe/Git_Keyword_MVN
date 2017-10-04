@@ -32,6 +32,7 @@ import static executionEngine.DriverScriptTest.OR;
 public class ActionKeywords {
 			
 		public static WebDriver driver;
+		public static WebDriver mdriver;
 		public static ExtentReports reports;
 		public static ExtentTest logger;
 		
@@ -131,6 +132,7 @@ public class ActionKeywords {
 			
 		}
 		
+		
 		public static void waitFor(String object, String data) throws Exception{
 			try{
 				Log.info("Wait for 5 seconds");
@@ -191,12 +193,26 @@ public class ActionKeywords {
 				logger.log(LogStatus.PASS, "Webelement '"+ object+"'displayed on page");
 			}catch(Exception e){
 				Log.error("Unable to find Webelement --- " + e.getMessage());
-				elementHighlight(driver.findElement(By.xpath(OR.getProperty(object))));
 				logger.log(LogStatus.FAIL, "Unable to find Webelement "+ object);
 	 			DriverScriptTest.bResult = false;
 			}
-			
 		}
+		
+		
+		public static void mverifyElement(String object, String data){
+			try{
+				Log.info("Verifying the element '"+ object);
+				mdriver.findElement(By.xpath(OR.getProperty(object))).isDisplayed();
+				//elementHighlight(mdriver.findElement(By.xpath(OR.getProperty(object))));
+				Thread.sleep(600);
+				logger.log(LogStatus.PASS, "Webelement '"+ object+"'displayed on page");
+			}catch(Exception e){
+				Log.error("Unable to find Webelement --- " + e.getMessage());
+				logger.log(LogStatus.FAIL, "Unable to find Webelement "+ object);
+	 			DriverScriptTest.bResult = false;
+			}
+		}
+		
 		
 		public static void elementHighlight(WebElement element) {
 			for (int i = 0; i < 2; i++) {
@@ -227,36 +243,6 @@ public class ActionKeywords {
 			
 		}
 		
-		@Parameters({"object","data"})
-		public static void multiBrowser(String object, String data){
-			try{
-				Log.info("Opening Browser");
-				//If value of the parameter is Chrome, this will execute
-				if (object.equals("Chrome")){
-					System.setProperty("webdriver.chrome.driver","C:\\JARs\\chromedriver_win32\\chromedriver.exe");
-					driver=new ChromeDriver();
-					driver.manage().window().maximize();
-					Log.info("Chrome browser started");}
-				else if (object.equals("IE")){
-					//You may need to change the code here to start IE Driver
-					System.setProperty("webdriver.ie.driver","C:\\JARs\\MicrosoftWebDriver.exe");
-					driver=new InternetExplorerDriver();
-					driver.manage().window().maximize();
-					Log.info("IE browser started");}
-				else if(object.equals("Mozilla")){
-					System.setProperty("webdriver.gecko.driver","C:\\JARs\\geckodriver-v0.19.0-win64\\geckodriver.exe");
-					driver=new FirefoxDriver();
-					Log.info("Mozilla browser started");}
-				//This block will execute only in case of an exception
-			}catch(Exception e){
-				//This is to print the logs - Method Name & Error description/stack
-				Log.info("Not able to open Browser --- " + e.getMessage());
-				//Set the value of result variable to false
-				DriverScriptTest.bResult = false;
-			}
-			
-		}
-		
 		public static void mopenBrowser(String object, String data) throws MalformedURLException{
 			
 			//Create an object of DesiredCapabilities class and specify android platform
@@ -281,10 +267,55 @@ public class ActionKeywords {
 			URL url= new URL("http://127.0.0.1:4723/wd/hub");
 			
 			//Create object of Android Driver class and pass the url and capability that we created
-			WebDriver mdriver=new AndroidDriver(url, capabilities);
+			mdriver=new AndroidDriver(url, capabilities);
 			
 			//Open URL
-			mdriver.get(Constants.URL);
+			
+		}
+		
+		public static void mnavigate(String object, String data){
+			try{
+				Log.info("Navigating to URL "+ "'" + Constants.URL1+"'");
+				mdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				//Constant Variable is used in place of URL
+				//As it was declared as 'static', it can be used by referring the class name
+				//Type the class name 'Constants' and press '.' dot, it will display all the memebers of the class Constants
+				mdriver.get(Constants.URL1);
+				logger.log(LogStatus.PASS, "Navigated to URL - "+ Constants.URL1);
+			}catch(Exception e){
+				Log.info("Not able to navigate --- " + e.getMessage());
+				logger.log(LogStatus.FAIL, "Unable to Navigate to URL - "+ Constants.URL1);
+				DriverScriptTest.bResult = false;
+			}
+				
+		}
+		
+		public static void minput(String object, String data){
+			try{
+				Log.info("Entering the text in "+ object);
+				//Constant Variable is used in place of UserName
+				//This is fetching the xpath of the element from the Object Repository property file
+				mdriver.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
+				logger.log(LogStatus.PASS, "Entered the text in "+ object);
+			}catch(Exception e){
+				Log.error("Not able to Enter UserName --- " + e.getMessage());
+				DriverScriptTest.bResult = false;
+				logger.log(LogStatus.FAIL, "Not able to enter text in "+ object);
+			}
+			 
+		}
+		
+		public static void mclick(String object, String data){
+			try{
+				Log.info("Clicking on Webelement "+ object);
+				mdriver.findElement(By.xpath(OR.getProperty(object))).click();
+				logger.log(LogStatus.PASS, "Succefully Clicked on button "+ object);
+			}catch(Exception e){
+				Log.error("Not able to click --- " + e.getMessage());
+				logger.log(LogStatus.FAIL, "Unable to Click on button "+ object);
+	 			DriverScriptTest.bResult = false;
+			}
+			
 		}
 		
 }

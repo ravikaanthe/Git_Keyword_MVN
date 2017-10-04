@@ -8,13 +8,13 @@ public class Constants {
     // 'String' & 'int' are the data type for storing a type of value	
 	
 	public static final String URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
-	public static final String URL1 = "http://www.phptravels.net/admin";
+	public static final String URL1 = "http://www.facebook.com";
 	public static final String Path_TestData = "src/test/java/dataEngine/DataEngine.xlsx";
-	public static final String Path_TestData1 = "src/test/java/dataEngine/DataEngine1.xlsx";
+	public static final String Path_TestData1 = "src/test/java/dataEngine/DataEngine_Mobile.xlsx";
 	public static final String Extent_Reports = "src/test/java/Reports/Report.html";
 	public static final String Path_OR = "src/test/java/config/OR";
 	public static final String File_TestData = "DataEngine.xlsx";
-	public static final String File_TestData1 = "DataEngine1.xlsx";
+	public static final String File_TestData1 = "DataEngine_Mobile.xlsx";
 	
 	//List of Data Sheet Column Numbers
 	public static final int Col_TestCaseID = 0;	
@@ -33,6 +33,7 @@ public class Constants {
 
 	//List of Data Engine Excel sheets
 	public static final String Sheet_TestSteps = "Test Steps";
+	
 	//New entry in Constant variable
 	public static final String Sheet_TestCases = "Test Cases";
 	

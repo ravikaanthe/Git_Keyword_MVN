@@ -1,20 +1,11 @@
 package executionEngine;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.beust.jcommander.Parameter;
 
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import config.ActionKeywords;
 import config.Constants;
@@ -58,7 +49,7 @@ public class DriverScriptTest {
 		//Added this for initialize log4j system properly via TestNG
 		//BasicConfigurator.configure();
     	
-    	ExcelUtils.setExcelFile(Constants.Path_TestData);
+    	ExcelUtils.setExcelFile(Constants.Path_TestData1);
     	
     	//VIMP: Call above constructor which will create an array of methods in ActionKeywords class
     	//DriverScriptTest method = new DriverScriptTest();

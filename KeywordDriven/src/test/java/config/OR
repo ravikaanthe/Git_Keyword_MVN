@@ -13,3 +13,7 @@ btn_Mywhishlist=//*[@id="center_column"]/div/div[2]/ul/li/a/span
 lnk_Dresses=//*[@id="block_top_menu"]/ul/li[2]/a
 lnk_Women=//*[@id="block_top_menu"]/ul/li[1]/a
 lnk_Tshirts=//*[@id="block_top_menu"]/ul/li[3]/a
+btn_Createaccount=//*[@id="signup-button"]
+txt_Firstname=//*[@id="u_0_0"]/input
+txt_Lastname=//*[@id="u_0_1"]/input
+btn_Next=//*[@id="mobile-reg-form"]/div[9]/button[1]
