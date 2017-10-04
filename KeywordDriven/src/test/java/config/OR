@@ -14,7 +14,11 @@ lnk_Dresses=//*[@id="block_top_menu"]/ul/li[2]/a
 lnk_Women=//*[@id="block_top_menu"]/ul/li[1]/a
 lnk_Tshirts=//*[@id="block_top_menu"]/ul/li[3]/a
 
-btn_Createaccount=//*[@id="signup-button"]
-txt_Firstname=//*[@id="u_0_0"]/input
-txt_Lastname=//*[@id="u_0_1"]/input
-btn_Next=//*[@id="mobile-reg-form"]/div[9]/button[1]
+m_btn_Createaccount=//*[@id="signup-button"]
+m_txt_Firstname=//*[@id="u_0_0"]/input
+m_txt_Lastname=//*[@id="u_0_1"]/input
+m_btn_Next=//*[@id="mobile-reg-form"]/div[9]/button[1]
+
+txt_Firstname=//*[@id="u_0_9"]
+txt_Lastname=//*[@id="u_0_b"]
+btn_Createaccount=//*[@id="u_0_r"]

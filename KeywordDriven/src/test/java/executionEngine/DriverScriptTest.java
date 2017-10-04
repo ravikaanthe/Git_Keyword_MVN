@@ -164,7 +164,6 @@ public class DriverScriptTest {
 	//As it is completely different set of logic, which revolves around the action only,
 	//It makes sense to keep it separate from the main driver script
 	//This is to execute test step (Action)
-
     private static void execute_Actions() throws Exception {
 		//This is a loop which will run for the number of actions in the Action Keyword class 
 		//method variable contain all the method and method.length returns the total number of methods
@@ -185,7 +184,7 @@ public class DriverScriptTest {
 					ExcelUtils.setCellData(Constants.KEYWORD_FAIL, iTestStep, Constants.Col_TestStepResult, Constants.Sheet_TestSteps);
 					//In case of false, the test execution will not reach to last step of closing browser
 					//So it make sense to close the browser before moving on to next test case
-					//ActionKeywords.closeBrowser("","");
+					ActionKeywords.closeBrowser("","");
 				//Once any method is executed, this break statement will take the flow outside of for loop
 				break;
 				}

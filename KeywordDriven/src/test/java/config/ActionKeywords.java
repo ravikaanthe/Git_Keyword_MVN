@@ -318,4 +318,15 @@ public class ActionKeywords {
 			
 		}
 		
+		public static void mcloseBrowser(String object, String data){
+			try{
+				Log.info("Closing the Browser");
+				mdriver.quit();
+				logger.log(LogStatus.PASS, "Succefully closed the browser -"+ object);
+			}catch(Exception e){
+				Log.error("Not able to Close the Browser --- " + e.getMessage());
+				logger.log(LogStatus.FAIL, "Unable to close the browser -"+ object);
+				DriverScriptTest.bResult = false;
+			}
+		}
 }

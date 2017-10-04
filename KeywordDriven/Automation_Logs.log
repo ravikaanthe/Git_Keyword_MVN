@@ -1,18 +1,40 @@
-2017-10-03 22:13:53,168 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
-2017-10-03 22:13:53,168 INFO  [Log] **************************************************************************************** 
-2017-10-03 22:13:53,168 INFO  [Log] **************************************************************************************** 
-2017-10-03 22:13:53,168 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login_01       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-10-03 22:13:53,168 INFO  [Log] **************************************************************************************** 
-2017-10-03 22:13:53,168 INFO  [Log] **************************************************************************************** 
-2017-10-03 22:14:05,001 INFO  [Log] Navigating to URL 'http://www.facebook.com' 
-2017-10-03 22:14:07,566 INFO  [Log] Clicking on Webelement btn_Createaccount 
-2017-10-03 22:14:07,817 INFO  [Log] Verifying the element 'txt_Firstname 
-2017-10-03 22:14:09,500 INFO  [Log] Entering the text in txt_Firstname 
-2017-10-03 22:14:10,120 INFO  [Log] Verifying the element 'txt_Lastname 
-2017-10-03 22:14:10,972 INFO  [Log] Entering the text in txt_Lastname 
-2017-10-03 22:14:11,625 INFO  [Log] Clicking on Webelement btn_Next 
-2017-10-03 22:14:12,286 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2017-10-03 22:14:12,287 INFO  [Log] X 
-2017-10-03 22:14:12,287 INFO  [Log] X 
-2017-10-03 22:14:12,288 INFO  [Log] X 
-2017-10-03 22:14:12,288 INFO  [Log] X 
+2017-10-03 23:47:12,498 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:12,498 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:12,498 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Mobile_Facebook       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-10-03 23:47:12,498 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:12,498 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:27,223 INFO  [Log] Navigating to URL 'http://www.facebook.com' 
+2017-10-03 23:47:29,908 INFO  [Log] Clicking on Webelement m_btn_Createaccount 
+2017-10-03 23:47:30,176 INFO  [Log] Verifying the element 'm_txt_Firstname 
+2017-10-03 23:47:31,776 INFO  [Log] Entering the text in m_txt_Firstname 
+2017-10-03 23:47:32,093 INFO  [Log] Verifying the element 'm_txt_Lastname 
+2017-10-03 23:47:32,871 INFO  [Log] Entering the text in m_txt_Lastname 
+2017-10-03 23:47:33,610 INFO  [Log] Clicking on Webelement m_btn_Next 
+2017-10-03 23:47:33,911 INFO  [Log] Closing the Browser 
+2017-10-03 23:47:36,462 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-10-03 23:47:36,462 INFO  [Log] X 
+2017-10-03 23:47:36,462 INFO  [Log] X 
+2017-10-03 23:47:36,462 INFO  [Log] X 
+2017-10-03 23:47:36,462 INFO  [Log] X 
+2017-10-03 23:47:36,462 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2017-10-03 23:47:36,463 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:36,463 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:36,463 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Web_Facebook       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-10-03 23:47:36,463 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:36,463 INFO  [Log] **************************************************************************************** 
+2017-10-03 23:47:36,463 INFO  [Log] Opening Browser 
+2017-10-03 23:47:39,627 INFO  [Log] Chrome browser started 
+2017-10-03 23:47:39,696 INFO  [Log] Navigating to URL 'http://facebook.com' 
+2017-10-03 23:47:42,190 INFO  [Log] Wait for 5 seconds 
+2017-10-03 23:47:43,265 INFO  [Log] Verifying the element 'txt_Firstname 
+2017-10-03 23:47:44,056 INFO  [Log] Wait for 5 seconds 
+2017-10-03 23:47:45,138 INFO  [Log] Entering the text in txt_Firstname 
+2017-10-03 23:47:45,305 INFO  [Log] Verifying the element 'txt_Lastname 
+2017-10-03 23:47:46,055 INFO  [Log] Entering the text in txt_Lastname 
+2017-10-03 23:47:46,240 INFO  [Log] Clicking on Webelement btn_Createaccount 
+2017-10-03 23:47:46,372 INFO  [Log] Closing the Browser 
+2017-10-03 23:47:47,556 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2017-10-03 23:47:47,556 INFO  [Log] X 
+2017-10-03 23:47:47,556 INFO  [Log] X 
+2017-10-03 23:47:47,556 INFO  [Log] X 
+2017-10-03 23:47:47,556 INFO  [Log] X 

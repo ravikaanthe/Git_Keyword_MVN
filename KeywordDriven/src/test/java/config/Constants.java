@@ -7,7 +7,8 @@ public class Constants {
     //Declared as 'final', so that the value of this variable can be changed
     // 'String' & 'int' are the data type for storing a type of value	
 	
-	public static final String URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
+	//public static final String URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
+	public static final String URL = "http://facebook.com";
 	public static final String URL1 = "http://www.facebook.com";
 	public static final String Path_TestData = "src/test/java/dataEngine/DataEngine.xlsx";
 	public static final String Path_TestData1 = "src/test/java/dataEngine/DataEngine_Mobile.xlsx";
