@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -136,7 +137,7 @@ public class ActionKeywords {
 		public static void waitFor(String object, String data) throws Exception{
 			try{
 				Log.info("Wait for 5 seconds");
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 			}catch(Exception e){
 				Log.error("Not able to Wait --- " + e.getMessage());
 				DriverScriptTest.bResult = false;
@@ -296,6 +297,7 @@ public class ActionKeywords {
 				//Constant Variable is used in place of UserName
 				//This is fetching the xpath of the element from the Object Repository property file
 				mdriver.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
+				mdriver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.TAB);
 				logger.log(LogStatus.PASS, "Entered the text in "+ object);
 			}catch(Exception e){
 				Log.error("Not able to Enter UserName --- " + e.getMessage());

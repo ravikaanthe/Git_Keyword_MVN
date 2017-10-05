@@ -18,7 +18,9 @@ m_btn_Createaccount=//*[@id="signup-button"]
 m_txt_Firstname=//*[@id="u_0_0"]/input
 m_txt_Lastname=//*[@id="u_0_1"]/input
 m_btn_Next=//*[@id="mobile-reg-form"]/div[9]/button[1]
+m_btn_next2=//*[@id="mobile-reg-form"]/div[9]/button[1]
+m_lnk_Confirmbirth=//*[@id="u_0_g"]
 
-txt_Firstname=//*[@id="u_0_9"]
-txt_Lastname=//*[@id="u_0_b"]
-btn_Createaccount=//*[@id="u_0_r"]
+txt_Email=//*[@id="email"]
+txt_Password=//*[@id="pass"]
+btn_Login=//*[@id="loginbutton"]
