@@ -10,12 +10,16 @@ public class Constants {
 	//public static final String URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
 	public static final String URL = "http://facebook.com";
 	public static final String URL1 = "http://www.facebook.com";
+	public static final String App_Dir = "src/test/resources";
+	public static final String App_PBazar = "com.policybazaar_2017-04-12.apk";
 	public static final String Path_TestData = "src/test/java/dataEngine/DataEngine.xlsx";
 	public static final String Path_TestData1 = "src/test/java/dataEngine/DataEngine_Mobile.xlsx";
+	public static final String Path_TestDataPolicy = "src/test/java/dataEngine/DataEngine_Mobile_PolicyApp.xlsx";
 	public static final String Extent_Reports = "src/test/java/Reports/Report.html";
 	public static final String Path_OR = "src/test/java/config/OR";
 	public static final String File_TestData = "DataEngine.xlsx";
 	public static final String File_TestData1 = "DataEngine_Mobile.xlsx";
+	public static final String File_TestData_Policy= "DataEngine_Mobile_PolicyApp.xlsx";
 	
 	//List of Data Sheet Column Numbers
 	public static final int Col_TestCaseID = 0;	

@@ -130,11 +130,11 @@ public static void setCellData(String Result,  int RowNum, int ColNum, String Sh
 				Cell.setCellValue(Result);
 				}
 			// Constant variables Test Data path and Test Data file name
-			FileOutputStream fileOut = new FileOutputStream(Constants.Path_TestData1);
+			FileOutputStream fileOut = new FileOutputStream(Constants.Path_TestDataPolicy);
 			ExcelWBook.write(fileOut);
 			//fileOut.flush();
 			fileOut.close();
-			ExcelWBook = new XSSFWorkbook(new FileInputStream(Constants.Path_TestData1));
+			ExcelWBook = new XSSFWorkbook(new FileInputStream(Constants.Path_TestDataPolicy));
 		 }catch(Exception e){
 			DriverScriptTest.bResult = false;
 			}

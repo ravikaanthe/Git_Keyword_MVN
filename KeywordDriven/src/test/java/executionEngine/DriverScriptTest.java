@@ -49,7 +49,7 @@ public class DriverScriptTest {
 		//Added this for initialize log4j system properly via TestNG
 		//BasicConfigurator.configure();
     	
-    	ExcelUtils.setExcelFile(Constants.Path_TestData1);
+    	ExcelUtils.setExcelFile(Constants.Path_TestDataPolicy);
     	
     	//VIMP: Call above constructor which will create an array of methods in ActionKeywords class
     	//DriverScriptTest method = new DriverScriptTest();

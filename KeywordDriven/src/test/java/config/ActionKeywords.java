@@ -1,5 +1,6 @@
 package config;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -262,8 +263,40 @@ public class ActionKeywords {
 			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "My Phone");
 			
 			//Set the Android Version as well
-			capabilities.setCapability(MobileCapabilityType.VERSION, "6.0.1");
+			capabilities.setCapability(MobileCapabilityType.VERSION, "5.0.1");
 			
+			//Specify object of URL class and specify Appium server address
+			URL url= new URL("http://127.0.0.1:4723/wd/hub");
+			
+			//Create object of Android Driver class and pass the url and capability that we created
+			mdriver=new AndroidDriver(url, capabilities);
+			
+			//Open URL
+			
+		}
+		
+		public static void openApp(String object, String data) throws MalformedURLException{
+			
+			File app=new File(Constants.App_Dir,Constants.App_PBazar);
+			//Create an object of DesiredCapabilities class and specify android platform
+			DesiredCapabilities capabilities=DesiredCapabilities.android();
+			
+			//Set the capability to execute our test in android platform
+			capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
+			
+			//We need to specify platform name as well along with above platform
+			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+			
+			//Set the Device name as well (you can give any name)
+			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Simulator");
+			
+			//Set the Android Version as well
+			capabilities.setCapability(MobileCapabilityType.VERSION, "5.0.1");
+			
+			capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "25");
+			
+			//set the App absolute path of Policy Bazar app and open policy bazar app
+			capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 			//Specify object of URL class and specify Appium server address
 			URL url= new URL("http://127.0.0.1:4723/wd/hub");
 			
